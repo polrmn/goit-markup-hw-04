@@ -80,10 +80,7 @@ a:hover, a:active, a:focus {
     background-color: var(--brand-color-main);
     justify-content: center;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
-
 }
 
 .header .container {
@@ -94,6 +91,7 @@ a:hover, a:active, a:focus {
 }
 
 .logo {
+    padding: 24px 0 25px;
     margin-right: 43px; 
     font-size: 26px;
     line-height: 1.19;
@@ -116,7 +114,9 @@ a:hover, a:active, a:focus {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-
+.navigation a {
+    padding: 32px 0;
+}
 .current {
     color: var(--brand-color-activity);
 }
@@ -139,7 +139,7 @@ a:hover, a:active, a:focus {
     gap: 10px;
     align-items: center;
     color: var(--brand-color-text);
-    padding: 10px 0;
+    padding: 32px 0;
 }
 .icon {
     fill: currentColor;
@@ -504,6 +504,14 @@ display: flex;
 flex-wrap: wrap;
 gap: 30px;
 }
+.project-link{
+    display: block;
+    text-decoration: none;
+}
+.project-link:hover,
+.project-link:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .project-item img {
     display: block;
 }
@@ -522,6 +530,7 @@ gap: 30px;
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
+    color: var(--brand-color-first);
 }
 
 .project-type {
